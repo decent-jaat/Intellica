@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Intellica</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <h2 id="chat-header"><i class="fa-solid fa-rocket"></i>INTELLICA<span id="chat-header-span"> | </span><span>Think.
+            Ask. Learn.</span></h2>
+
+    <div id="chat"></div>
+
+    <div class="chat-container">
+        <div class="input-area">
+            <div class="image-upload">
+                <input type="file" id="image-input" accept="image/*" hidden>
+                <button onclick="document.getElementById('image-input').click()">
+                    <i class="fa-solid fa-file-arrow-up"></i>
+                </button>
+            </div>
+            <input type="text" id="user-input" placeholder="Type your question...">
+            <button onclick="sendMessage()">&#8593</button>
+            <button id="mic-btn" onclick="startListening()"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+    </div>
+    <!-- Button to open menu -->
+    <button class="openbtn" onclick="openMenu()"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+
+    <!-- Side Menu -->
+    <div id="mySidemenu" class="sidemenu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></a>
+        <button class="clear-btn" onclick="clearChat()">Clear Chat</button>
+        <button class="exit-btn" onclick="exitChat()">Exit Chat</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
