@@ -1,5 +1,5 @@
 // Constants
-const TYPING_TEXT = "Bot is typing...";
+const TYPING_TEXT = "Typing ....";
 
 // Load chat history on page load
 window.onload = function () {
