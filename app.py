@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Initialize OpenAI client
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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"
+    api_key="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"
 )
 
 # Retry helper function
