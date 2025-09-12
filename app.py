@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Initialize OpenAI client
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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"
+    api_key="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"
 )
 
 # Retry helper function
@@ -35,7 +35,7 @@ def ask():
 
     def request_func():
         return client.chat.completions.create(
-            model="qwen/qwen3-coder:free",
+            model="nvidia/nemotron-nano-9b-v2:free",
             messages=[{"role": "user", "content": user_message}]
         )
 
@@ -65,7 +65,7 @@ def ask_image():
 
     def request_func():
         return client.chat.completions.create(
-            model="qwen/qwen3-coder:free",  # vision-enabled model
+            model="nvidia/nemotron-nano-9b-v2:free",  # vision-enabled model
             messages=[
                 {
                     "role": "user",
