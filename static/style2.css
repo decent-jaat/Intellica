@@ -44,7 +44,7 @@
    font-weight: normal;
  }
 
- @media (max-width: 400px) {
+ @media (max-width: 430px) {
    #chat-header {
      flex-direction: column;
      align-items: flex-start;
@@ -82,7 +82,7 @@
 
 @media (max-width: 430px) {
     #chat {
-      margin-top: 12px;
+      margin-top: 10px;
   }
 }
 /* Messages */
@@ -226,4 +226,12 @@
    top: 1.5dvh;
    right: 2dvb;
    border-radius: 5px;
+ }
+
+ @media (max-width: 430px) {
+   .openbtn {
+     font-size: 1.2rem;
+     top: 1dvh;
+     right: 1dvb;
+   }
  }
