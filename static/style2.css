@@ -80,6 +80,12 @@
     scroll-behavior: smooth;
 }
 
+@media (max-width: 430px) {
+    #chat {
+        height: 70vh; /* Adjust height for smaller screens */
+    }
+  }
+
 /* Messages */
 .user-msg,
 .bot-msg {
