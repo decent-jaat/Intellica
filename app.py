@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 from openai import OpenAI
+import os
 import base64, time
 
 app = Flask(__name__)
@@ -7,7 +8,8 @@ app = Flask(__name__)
 # Initialize OpenAI client
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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"
+    # api_key="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"  #use only for local device
+    api_key=os.getenv("OPENROUTER_API_KEY")
 )
 
 # Retry helper function
@@ -35,7 +37,7 @@ def ask():
 
     def request_func():
         return client.chat.completions.create(
-            model="tngtech/deepseek-r1t2-chimera:free",
+            model="google/gemma-3n-e2b-it:free",
             messages=[{"role": "user", "content": user_message}]
         )
 
@@ -65,7 +67,7 @@ def ask_image():
 
     def request_func():
         return client.chat.completions.create(
-            model="tngtech/deepseek-r1t2-chimera:free",
+            model="google/gemma-3n-e2b-it:free",
             messages=[
                 {
                     "role": "user",
