@@ -82,11 +82,9 @@
 
 @media (max-width: 430px) {
     #chat {
-      margin-top: 10px;
-        height: 82vh; /* Adjust height for smaller screens */
-    }
+      margin-top: 12px;
   }
-
+}
 /* Messages */
 .user-msg,
 .bot-msg {
