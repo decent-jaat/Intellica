@@ -8,6 +8,11 @@
 
  /* Dark background */
  body {
+  margin: 0; /* remove default margins */
+  padding-top: env(safe-area-inset-top);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
    background: linear-gradient(135deg, #343333, #0d0d0d);
    /* color: #fff; */
    height: 100vh;
