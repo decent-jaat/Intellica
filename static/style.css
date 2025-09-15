@@ -22,13 +22,6 @@ body {
   color: #ff0033;
 }
 
-@media (max-width: 430px) {
-  html,
-  body {
-    height: 94vh; /* Adjust height for mobile */
-  }
-}
-
 .container {
   display: flex;
   align-items: center;
