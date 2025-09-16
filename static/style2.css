@@ -92,8 +92,7 @@
 
  @media (max-width: 430px) {
    #chat {
-     margin-top: 10px;
-      height: calc(100dvh - 130px);
+      height: calc(100dvh - 125px);
    }
  }
 
