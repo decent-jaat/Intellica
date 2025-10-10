@@ -54,23 +54,23 @@
    #chat-header {
      padding-left: 5px;
      padding-top: 12px;
-     height: 55px;
+     height: 60px;
      flex-direction: column;
      align-items: flex-start;
      justify-content: center;
-     font-size: 25px;
-   }
-
-   #chat-header i {
      font-size: 23px;
    }
 
+   #chat-header i {
+     font-size: 21px;
+   }
+
    #chat-header span {
-     font-size: 18px;
+     font-size: 16px;
    }
 
    #chat-header #chat-header-span {
-     font-size: 28px;
+     font-size: 26px;
    }
  }
 
@@ -196,7 +196,8 @@
  @media (max-width: 430px) {
 
    .chat-container {
-     padding: 0;
+    height: 60px; 
+    padding: 0;
      padding-bottom: 5px;
    }
 
