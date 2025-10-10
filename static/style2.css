@@ -61,11 +61,11 @@
    }
 
    #chat-header i {
-     font-size: 21px;
+     font-size: 23px;
    }
 
    #chat-header span {
-     font-size: 16px;
+     font-size: 18px;
    }
 
    #chat-header #chat-header-span {
@@ -93,7 +93,7 @@
 
  @media (max-width: 430px) {
    #chat {
-     height: calc(100dvh - 125px);
+     height: calc(100dvh - 120px);
    }
  }
 
@@ -193,6 +193,11 @@
 
 
  @media (max-width: 430px) {
+
+  .chat-container {
+    padding: 5px 8px;
+  }
+
    .input-area #user-input {
      height: 40px;
      font-size: 13px;
